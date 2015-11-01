@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1446371204 source:e:\nbu_documents\sources\c++\expresion_3a\main.cpp
+	<cmath>
+	<iostream>
+	<vector>
+	<sstream>
+
