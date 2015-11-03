@@ -26,7 +26,7 @@ unsigned NumbersOfDevision(unsigned num)
 
 int main()
 {
-    cout << NumbersOfDevision(120) << endl;
+    cout << NumbersOfDevision(4) << endl;
 
     return 0;
 }
