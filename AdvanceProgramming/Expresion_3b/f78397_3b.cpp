@@ -7,8 +7,8 @@ using namespace std;
 
 void CountDevNum(unsigned number_for_beaking,unsigned pos,const vector<int> &vec_bn);
 
-unsigned count;
 int adds[1000];
+int count_n = 0;
 
 int main()
 {
@@ -25,12 +25,12 @@ int main()
         vector<int> numbers_for_breaking;
         while(input_line_nfb >> temp)
             numbers_for_breaking.push_back(temp);
-        for (int i = 0;i < numbers_for_breaking.size();i++)
+        for (unsigned i = 0;i < numbers_for_breaking.size();i++)
         {
             adds[0] = numbers_for_breaking[i]+1;
             CountDevNum(numbers_for_breaking[i],1,breaking_numbers);
-            cout << count << " ";
-            count = 0;
+            cout << count_n << " ";
+            count_n = 0;
         }
         cout << endl;
     }
@@ -42,7 +42,7 @@ void CountDevNum(unsigned number_for_breaking,unsigned pos,const vector<int> &ve
 {
     for (int i = vec_bn.size() - 1;i > 0;i--)
     {
-        int curent_bn = vec_bn[i];
+        unsigned curent_bn = vec_bn[i];
         if(number_for_breaking > curent_bn)
         {
             adds[pos] = curent_bn;
@@ -53,7 +53,7 @@ void CountDevNum(unsigned number_for_breaking,unsigned pos,const vector<int> &ve
         {
             adds[pos] = curent_bn;
             if(adds[pos] <= adds[pos - 1])
-                count++;
+                count_n++;
         }
     }
 }
