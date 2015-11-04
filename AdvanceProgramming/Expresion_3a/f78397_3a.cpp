@@ -8,15 +8,11 @@ using namespace std;
 /* Брой числа в редицата */
   vector<int> vec;
   bool is_done;
+  bool is_have;
 
-void checkSol(int n,int sum)
-{
-    int temp_sum = 0;
-    for (int i = 0;i < n;i++)
-        temp_sum += vec[i];
-    if (temp_sum == sum)
-    {
-        int temp = 0;
+  void Print(int n,int temp_sum)
+  {
+      int temp = 0;
         for(int i = 0;i < n;i++)
         {
             if(vec[i] > 0)
@@ -38,6 +34,17 @@ void checkSol(int n,int sum)
         }
         cout << "=" << temp_sum << endl;
         is_done = true;
+  }
+
+void checkSol(int n,int sum)
+{
+    int temp_sum = 0;
+    for (int i = 0;i < n;i++)
+        temp_sum += vec[i];
+    if (temp_sum == sum)
+    {
+        Print(n,temp_sum);
+        is_have = true;
     }
 }
 void variate(unsigned i,unsigned n,int sum)
@@ -70,9 +77,12 @@ int main(void) {
         while(stream_num >> num)
             vec.push_back(num);
         is_done = false;
+        is_have = false;
         int sum = vec[vec.size()-1];
         vec[vec.size()-1] = 0;
         GetSumFromSequence(vec,sum);
+        if(!is_have)
+            cout << endl;
         vec.clear();
     }
   return 0;
