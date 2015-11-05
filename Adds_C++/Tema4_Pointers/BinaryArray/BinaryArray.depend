@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1446740078 source:e:\nbu_documents\sources\c++\homeworks\adds_c++\tema4_pointers\binaryarray\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<string>
+	<cmath>
+
