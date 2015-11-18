@@ -1,8 +1,6 @@
 # depslib dependency file v1.0
-1447844404 source:e:\nbu_documents\sources\c++\homeworks\advanceprogramming\reordernumbers\f78397_4a.cpp
+1447844862 source:e:\nbu_documents\sources\c++\homeworks\advanceprogramming\reordernumbers\f78397_4a.cpp
 	<iostream>
 	<algorithm>
 	<string>
-	<sstream>
-	<vector>
 

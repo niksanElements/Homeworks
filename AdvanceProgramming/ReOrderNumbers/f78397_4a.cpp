@@ -11,7 +11,7 @@ int main()
     string input;
     while(cin >> input)
     {
-        sort(&input[0],&input[input.size()-1],Compare);
+        sort(&input[0],&input[input.size()],Compare);
         cout << input << endl;
     }
     return 0;
