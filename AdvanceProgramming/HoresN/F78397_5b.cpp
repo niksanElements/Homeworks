@@ -4,7 +4,7 @@
 using namespace std;
 
 int **table;
-unsigned short n;
+short  n;
 bool is_done;
 short x_position[] = {-1, 1, 2,2,1,-1,-2,-2};
 short y_position[] = {-2,-2,-1,1,2, 2, 1,-1};
@@ -20,7 +20,7 @@ void Print()
         cout << endl;
     }
 }
-void FindeMoves(int x, int y,unsigned count_moves)
+void FindeMoves(int x, int y,int count_moves)
 {
     if(!is_done)
     {
