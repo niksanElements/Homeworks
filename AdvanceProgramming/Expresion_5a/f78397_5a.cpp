@@ -19,11 +19,11 @@ bool biseccion(double a, double b, double tolerancia)
             {
                b=c;
             }
-            else
+            else if(f(b)*f(c) < 0)
             {
                a=c;
             }
-            if(f(a)*f(b) > 0)
+            else
             {
                 cout << "NO SOLUTION";
                 return false;
