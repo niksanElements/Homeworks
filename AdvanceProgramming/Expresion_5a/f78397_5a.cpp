@@ -39,5 +39,4 @@ int main()
 {
     double tolerance = 10e-10;
     biseccion(-10,10,tolerance);
-;
 }
