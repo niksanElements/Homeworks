@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1448406921 source:e:\nbu_documents\sources\c++\homeworks\advanceprogramming\knight\f78397_5b.cpp
+	<iostream>
+	<iomanip>
+	<vector>
+	<array>
+	<string>
+	<iomanip>
+	<tuple>
+	<algorithm>
+
+1448445141 source:e:\nbu_documents\sources\c++\homeworks\advanceprogramming\knight\f78397_5b2.cpp
+	<iostream>
+	<tuple>
+	<algorithm>
+	<vector>
+	<array>
+	<iomanip>
+
