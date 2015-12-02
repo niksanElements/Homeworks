@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1449067705 source:e:\nbu_documents\sources\c++\homeworks\advanceprogramming\shifts\f78397_6a.cpp
+	<iostream>
+	<vector>
+	<string>
+	<sstream>
+
