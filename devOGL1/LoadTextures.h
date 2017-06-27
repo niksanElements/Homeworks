@@ -1,0 +1,39 @@
+#pragma once
+#include <stdlib.h>
+#include "RgbImage.h"
+
+GLuint textureName[10];
+extern GLuint txtNum; //Ще се задава в main
+
+//Зареждане на текстура от файл
+void loadTextureFromFile(const char *filename){
+	glClearColor (0.0, 0.0, 0.0, 0.0);
+	glShadeModel(GL_SMOOTH);
+	glEnable(GL_DEPTH_TEST);
+
+	RgbImage theTexMap( filename );
+	// Настройка на интерполация
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+
+	//Подготовка на различни образи на текстурата
+
+	gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB,
+					 theTexMap.GetNumCols(), theTexMap.GetNumRows(),
+					 GL_RGB, GL_UNSIGNED_BYTE, theTexMap.ImageData() );
+	/*				 */
+}
+
+//Зареждане на текстури от файлове по списък
+void initTextures(const char* filenames[] ) {
+	glGenTextures( txtNum, textureName );	// Номерация в OpenGL на текстурите
+	for ( unsigned i=0; i<txtNum; i++ ) {
+		glBindTexture(GL_TEXTURE_2D, textureName[i]);	// Включване на текстура №i
+		loadTextureFromFile( filenames[i] );			// И зареждане на  №i
+	}
+}

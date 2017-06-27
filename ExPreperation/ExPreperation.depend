@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1498241692 source:e:\c++_source\expreperation\main.cpp
+	<tchar.h>
+	<windows.h>
+	"point.h"
+	"line.h"
+
+1497975340 source:e:\c++_source\expreperation\console.cpp
+	"console.h"
+	<windows.h>
+	<stdio.h>
+	<fcntl.h>
+	<io.h>
+	<iostream>
+	<fstream>
+
+1497975064 e:\c++_source\expreperation\console.h
+	<windows.h>
+
+1498070066 e:\c++_source\expreperation\include\point.h
+	"shape.h"
+
+1498239656 e:\c++_source\expreperation\include\shape.h
+	<windows.h>
+
+1498014466 source:e:\c++_source\expreperation\src\point.cpp
+	"point.h"
+	<cmath>
+
+1498242361 source:e:\c++_source\expreperation\src\shape.cpp
+	"shape.h"
+	"point.h"
+	<cmath>
+	<algorithm>
+
+1498015474 source:e:\c++_source\expreperation\src\line.cpp
+	"line.h"
+
+1498014815 e:\c++_source\expreperation\include\line.h
+	"point.h"
+	<windows.h>
+

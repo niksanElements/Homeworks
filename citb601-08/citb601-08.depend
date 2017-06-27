@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1493045574 source:c:\users\stanislav\documents\codeblocks\citb601-08\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1492960707 c:\users\stanislav\documents\codeblocks\citb601-08\point.h
+	<math.h>
+	<iostream>
+
+1493047133 source:c:\users\stanislav\documents\codeblocks\citb601-08\main.cpp
+	<windows.h>
+	"draw.h"
+	"menu.h"
+
+1493048585 c:\users\stanislav\documents\codeblocks\citb601-08\draw.h
+	<stdio.h>
+	<gl\gl.h>
+	<gl\glu.h>
+
+1493047095 c:\users\stanislav\documents\codeblocks\citb601-08\menu.h
+
+1493050733 source:c:\users\stan\documents\projects\citb601-08\main.cpp
+	<windows.h>
+	"draw.h"
+	"menu.h"
+
+1493288316 c:\users\stan\documents\projects\citb601-08\draw.h
+	<stdio.h>
+	<gl\gl.h>
+	<gl\glu.h>
+
+1493288557 c:\users\stan\documents\projects\citb601-08\menu.h
+
+1493288470 source:c:\users\stan\documents\projects\citb601-08\models.cpp
+	<gl\gl.h>
+	<stdio.h>
+	"point.h"
+
+1492964307 c:\users\stan\documents\projects\citb601-08\point.h
+	<math.h>
+	<iostream>
+

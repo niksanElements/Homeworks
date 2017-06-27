@@ -1,0 +1,152 @@
+# depslib dependency file v1.0
+1428500794 source:c:\users\stanislav\documents\codeblocks\devogl1\main.cpp
+	<windows.h>
+	"draw.h"
+
+1428506736 c:\users\stanislav\documents\codeblocks\devogl1\draw.h
+	<gl\gl.h>
+	<gl\glu.h>
+
+1428506623 source:c:\users\stanislav\documents\codeblocks\devogl1\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1428506623 c:\users\stanislav\documents\codeblocks\devogl1\point.h
+	<math.h>
+	<stdio.h>
+	<stdlib.h>
+
+1430054992 source:h:\devogl1\main.cpp
+	<windows.h>
+	"draw.h"
+
+1430396802 h:\devogl1\draw.h
+	<cstdio>
+	<gl\gl.h>
+	<gl\glu.h>
+	"point.h"
+
+1430393542 source:h:\devogl1\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1430051950 h:\devogl1\point.h
+	<math.h>
+	<iostream>
+
+1428611864 source:i:\devogl1\main.cpp
+	<windows.h>
+	"draw.h"
+
+1428616330 i:\devogl1\draw.h
+	<cstdio>
+	<gl\gl.h>
+	<gl\glu.h>
+
+1428616292 source:i:\devogl1\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1428612208 i:\devogl1\point.h
+	<math.h>
+	<iostream>
+
+1430663922 source:m:\devogl1\main.cpp
+	<windows.h>
+	"draw.h"
+
+1430664060 m:\devogl1\draw.h
+	<cstdio>
+	<gl\gl.h>
+	<gl\glu.h>
+	"point.h"
+	"LoadTextures.h"
+
+1430393542 source:m:\devogl1\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1430051950 m:\devogl1\point.h
+	<math.h>
+	<iostream>
+
+1430664894 source:m:\devogl1\curved.cpp
+	"point.h"
+	<gl\gl.h>
+
+1430053652 source:h:\devogl1\curved.cpp
+	"point.h"
+	<gl\gl.h>
+
+1430663534 m:\devogl1\loadtextures.h
+	<stdlib.h>
+	"RgbImage.h"
+
+1430665484 m:\devogl1\rgbimage.h
+	<stdio.h>
+
+1430664894 source:c:\users\stan\documents\codeblocks\devogl1\curved.cpp
+	"point.h"
+	<gl\gl.h>
+
+1430051950 c:\users\stan\documents\codeblocks\devogl1\point.h
+	<math.h>
+	<iostream>
+
+1461049907 source:c:\users\stan\documents\codeblocks\devogl1\main.cpp
+	<windows.h>
+	"draw.h"
+
+1461050266 c:\users\stan\documents\codeblocks\devogl1\draw.h
+	<cstdio>
+	<gl\gl.h>
+	<gl\glu.h>
+	"point.h"
+	"LoadTextures.h"
+
+1461050007 c:\users\stan\documents\codeblocks\devogl1\loadtextures.h
+	<stdlib.h>
+	"RgbImage.h"
+
+1430665484 c:\users\stan\documents\codeblocks\devogl1\rgbimage.h
+	<stdio.h>
+
+1461050675 source:c:\users\stan\documents\codeblocks\devogl1\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1461054275 source:e:\c++_source\devogl1\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1430055550 e:\c++_source\devogl1\point.h
+	<math.h>
+	<iostream>
+
+1498315384 source:e:\c++_source\devogl1\main.cpp
+	<windows.h>
+	"draw.h"
+
+1498317962 e:\c++_source\devogl1\draw.h
+	<cstdio>
+	<gl\gl.h>
+	<gl\glu.h>
+	"point.h"
+	"LoadTextures.h"
+	"models.h"
+
+1498322481 e:\c++_source\devogl1\loadtextures.h
+	<stdlib.h>
+	"RgbImage.h"
+
+1430669084 e:\c++_source\devogl1\rgbimage.h
+	<stdio.h>
+
+1461054275 e:\c++_source\devogl1\models.cpp
+	<gl\gl.h>
+	"point.h"
+
+1498317952 e:\c++_source\devogl1\models.h
+	<gl\gl.h>
+	"point.h"
+

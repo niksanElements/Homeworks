@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1496854158 source:e:\c++_source\interactivegraphics\main.cpp
+	<cstdio>
+	<cstring>
+	"grserv.h"
+
+1496912352 e:\c++_source\interactivegraphics\grserv.h
+	"shapes.h"
+	<stdio.h>
+
+1496913105 e:\c++_source\interactivegraphics\shapes.h
+	"vector2d.h"
+	"rasterization.h"
+	<Windows.h>
+
+1495888517 e:\c++_source\interactivegraphics\vector2d.h
+	<cmath>
+	<windows.h>
+
+1495888175 e:\c++_source\interactivegraphics\rasterization.h
+	"vector2D.h"
+

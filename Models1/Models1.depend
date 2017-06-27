@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1496279838 source:e:\c++_source\models1\main.cpp
+	<windows.h>
+	"draw.h"
+
+1496281038 e:\c++_source\models1\draw.h
+	<stdio.h>
+	<gl\gl.h>
+	<gl\glu.h>
+	"model.h"
+
+1496281553 e:\c++_source\models1\model.h
+	<gl\gl.h>
+	"point.h"
+
+1496278821 e:\c++_source\models1\point.h
+	<math.h>
+	<iostream>
+

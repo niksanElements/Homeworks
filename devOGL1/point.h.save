@@ -1,0 +1,71 @@
+#ifndef POINT_H_INCLUDED
+#define POINT_H_INCLUDED
+//CSCB506 Графично програмиране, НБУ, 2014
+//Демонстрационна задача по геометрично моделиране
+//и визуализация чрез OpenGL. Изготвил: Ст.Иванов
+
+//файл defs.h. Изготвил: Ст.Иванов
+
+#pragma once
+#include "GL/glut.h"
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+const double PI=4.*atan(1.);
+
+//Помощен клас за смятане с тримерни вектори
+class Point{
+	double x,y,z;	//координатите
+	//GLdouble q[3];	//OpenGL ги иска така
+public:
+	//Конструктор. Всички оператори го ползват
+	Point(double X=1,double Y=0,double Z=0){
+		x=X;y=Y;z=Z;//q[0]=x;q[1]=y;q[2]=z;
+	}
+	//Единичен вектор
+	Point operator!()const{double m=mod();
+		return Point(x/m,y/m,z/m);
+	}
+	//Събиране и изваждане
+	Point operator +(const Point & p)const{
+		return Point(x+p.x,y+p.y,z+p.z);
+	}
+	Point operator -(const Point & p)const{
+		return Point(x-p.x,y-p.y,z-p.z);
+	}
+	Point operator -()const{
+		return Point(-x,-y,-z);
+	}
+	//Векторно произведение (cross product)
+	Point operator *(const Point & p)const{
+		return Point(y*p.z-z*p.y,z*p.x-x*p.z,x*p.y-y*p.x);
+	}
+	//Умножение с число
+	Point operator *(double d)const{
+		return Point(x*d,y*d,z*d);
+	}
+	//Скаларно произведение (dot product)
+	double operator %(const Point & p)const{
+		return x*p.x+y*p.y+z*p.z;
+	}
+	//Модул
+	double mod()const{return sqrt(*this%*this);}
+	//Връща компонентите като масив (за OpenGL)
+	const double * arr()const{
+		return &x;
+	}
+};
+
+void buildPoints();
+void tetrahedron(double);
+void hexahedron(double);
+void octahedron(double);
+void dodecahedron(double);
+void icosahedron(double);
+void pyramid(double , Point , int );
+
+
+
+
+#endif // POINT_H_INCLUDED

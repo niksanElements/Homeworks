@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1498325544 source:e:\c++_source\openglexam\main.cpp
+	<windows.h>
+	"draw.h"
+	"textures.h"
+
+1498376511 e:\c++_source\openglexam\draw.h
+	<cstdio>
+	<gl\gl.h>
+	<gl\glu.h>
+	"models.h"
+	"textures.h"
+
+1498378234 e:\c++_source\openglexam\models.h
+	"draw.h"
+	"util.h"
+	<cmath>
+
+1498291127 e:\c++_source\openglexam\util.h
+
+1498326076 e:\c++_source\openglexam\textures.h
+	"rgbImage.h"
+
+1498313343 e:\c++_source\openglexam\rgbimage.h
+	<stdio.h>
+
